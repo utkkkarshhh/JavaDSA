@@ -1,0 +1,11 @@
+1. Integrals: Byte (1 byte)
+              Short (2 byte)
+              Int (4 byte)
+              Long (8 byte)
+
+2. Floating Point: Float (4 byte)
+                   Double (8 byte)
+
+3. Char (2 byte)
+
+4. Boolean (? byte)
