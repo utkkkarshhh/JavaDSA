@@ -1,0 +1,12 @@
+Relational Operators: They return a boolean result.
+<
+<=
+>
+>=
+==
+!=
+
+Logical Operators: They are used to combine to conditional statements.
+&& - Logical And (Both Conditions/Statements must be true)
+|| - Logical Or (One Condition/Statement must be true)
+! - Not

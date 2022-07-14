@@ -1,0 +1,34 @@
+Type Conversion:
+Converting one Data Type into another is Type Conversion.
+Type conversion is possible with few conditions and situations.
+
+For example: int number = 'A';
+             System.out.println(number);
+             => It would return 65 as output becasue of automatic type coversion, 65 is ASCII code for upper-case A.
+
+Type Casting:
+Type casting can be used to interpet one kind of data type into another.
+For example: int num = 65.98f;  -> This would throw an error.
+
+So Type casting can convert this value using this approach: 
+int num = (int)(65.98f);s here an float number is converted to an interger data type.
+
+Type Promotion:
+Similary if these data types do not have enough capacity in terms of storage, it would automatically promote the data type.
+
+For example: 
+
+int a = 257;
+byte b = (byte)(a);
+System.out.println(b);
+
+Instead of giving 257 as output, it would give 1 because a Byte has storage space of 256. So it would throw remainder as an output which is 257%256 = 1;
+
+Another example: 
+byte a = 40;
+byte b = 50;
+byte c = 100;
+int d = a * b / c; -> Result here would be 20. 40*50 = 2000; 2000/100 = 20
+
+Here Byte is able to store 2000 as value because of automatic Type Promotion. As the expression a*b is performed using Integer data type.
+
