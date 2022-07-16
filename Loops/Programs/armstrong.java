@@ -6,12 +6,18 @@ public class armstrong{
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the number: ");
     int n = sc.nextInt();
-    int r, arm = 0;
+    int m = n;
+    int r, sum = 0;
     while(n > 0){
       r = n % 10;
       n = n / 10;
-      arm = arm + r * r * r;
-      System.out.println("The armstrong number is" + arm);
+      sum = sum + r * r * r;
     }
+      System.out.println("Resultant is: " + sum);
+    if (sum == m){
+      System.out.println("Its an armstrong number!!");
+    }
+    else
+      System.out.println("Not an armstrong number");
   }
 }
