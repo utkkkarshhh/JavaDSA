@@ -8,9 +8,12 @@ public class oneDArray{
     int C [];
     C = new int [10];
     int [] D = new int [5];
-    B[2] = 61;
-    for(int i = 0; i <= B.length; i++){
-      System.out.println(i + " = "  + B[i]);
+    // B[2] = 61;
+    // for(int i = 0; i <= B.length; i++){
+    //   System.out.println(i + " = "  + B[i]);
+    // }
+    for (int i = 0; i <= C.length; i++){
+      System.out.println(i + " = " + C[i]);
     }
   }
 }
