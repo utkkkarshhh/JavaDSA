@@ -9,10 +9,12 @@ public class arrange{
     // Declaring the array
     int A[] = new int [n];
 
+    int i, s, e;
+
     // Adding elements into array
-    for(int i = 0; i < n; i++){
-		A[i] = sc.nextInt();
-	  }
+    while(s <= e){
+      if
+    }
 
     // Printing the array
     for(int i = 0; i < A.length; i++){
