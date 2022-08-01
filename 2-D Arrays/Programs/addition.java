@@ -13,6 +13,7 @@ public class addition{
         C[i][j] = A[i][j] + B[i][j];
       }
     }
+    
 
     // Printing C Array
     for(int i=0; i<C.length; i++){
