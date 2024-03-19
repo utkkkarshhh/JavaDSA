@@ -111,25 +111,48 @@ class LL{
     //Reverse a linked list - Iterative Approach
 
     public void reverse(){
-        if(head == null || head.next == null){
+        if (head == null){
+            System.out.println("List is Empty");
             return;
         }
-        
-        Node prevNode = head;
-        Node currentNode = head.next;
-        while(currentNode != null){
-            Node nextNode = currentNode.next;
-            currentNode.next = prevNode;
-            // Update
-            prevNode = currentNode;
-            currentNode = nextNode;
+        if(head.next == null){
+            System.out.println("List only has one indice");
+            return;
         }
-
-        head.next = null;
-        head = prevNode;
+        else{
+            Node prevNode = head;
+            Node currentNode = head.next;
+    
+            while(currentNode != null){
+                Node nextNode = currentNode.next;
+                currentNode.next = prevNode;
+    
+                //Update
+    
+                prevNode = currentNode;
+                currentNode = nextNode;
+            }
+    
+            head.next = null;
+            head = prevNode;
+        }
     }
 
     // Reverse a linked list - Recursive Approach
+
+    public void reverseRecursive(){
+        if (head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        if(head.next == null){
+            System.out.println("List only has one indice");
+            return;
+        }
+        else{
+            
+        }
+    }
 
     public static void main(String[] args){
         LL list = new LL();
