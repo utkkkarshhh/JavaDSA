@@ -120,8 +120,8 @@ class LL{
             return;
         }
         else{
-            Node prevNode = head;
-            Node currentNode = head.next;
+            Node prevNode = null;
+            Node currentNode = head;
     
             while(currentNode != null){
                 Node nextNode = currentNode.next;
@@ -132,25 +132,28 @@ class LL{
                 prevNode = currentNode;
                 currentNode = nextNode;
             }
-    
-            head.next = null;
+
             head = prevNode;
+            return;
         }
     }
 
     // Reverse a linked list - Recursive Approach
 
-    public void reverseRecursive(){
+    public Node reverseRecursive(Node head){
         if (head == null){
             System.out.println("List is Empty");
-            return;
+            return null;
         }
         if(head.next == null){
             System.out.println("List only has one indice");
-            return;
+            return head;
         }
         else{
-            
+            Node newHead = reverseRecursive(head.next);
+            head.next.next = head;
+            head.next = null;
+            return newHead;
         }
     }
 
@@ -170,7 +173,7 @@ class LL{
         list.print();
         list.addFirst(30);
         list.print();
-        list.reverse();
+        list.head = list.reverseRecursive(list.head);
         list.print();
     } 
 }
